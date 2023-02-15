@@ -22,8 +22,6 @@ liekieBurti = ["q", "w", "x", "y"]
 for burts in liekieBurti:
   alfabets.remove(burts)
 
-print(alfabets)
-
 teksts = "zivs peld upē"
 jaunaisTeksts = str()
 k = 3
@@ -44,9 +42,7 @@ def switchIndex(idx):
 for simbols in teksts:
   if simbols in alfabets:
     indekss = alfabets.index(simbols)
-    print(indekss)
     indekss = switchIndex(indekss)
-    print(indekss)
     
     jaunaisTeksts += alfabets[indekss]
   else: jaunaisTeksts += simbols
